@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6931F88A2BA27A0400EC023D /* LiftLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F8892BA27A0400EC023D /* LiftLinkApp.swift */; };
+		6931F88C2BA27A0400EC023D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F88B2BA27A0400EC023D /* ContentView.swift */; };
+		6931F88E2BA27A0600EC023D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6931F88D2BA27A0600EC023D /* Assets.xcassets */; };
+		6931F8922BA27A0600EC023D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6931F8912BA27A0600EC023D /* Preview Assets.xcassets */; };
+		6931F89C2BA27A0600EC023D /* LiftLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F89B2BA27A0600EC023D /* LiftLinkTests.swift */; };
+		6931F8A62BA27A0600EC023D /* LiftLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F8A52BA27A0600EC023D /* LiftLinkUITests.swift */; };
+		6931F8A82BA27A0600EC023D /* LiftLinkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F8A72BA27A0600EC023D /* LiftLinkUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6931F8982BA27A0600EC023D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6931F87E2BA27A0400EC023D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6931F8852BA27A0400EC023D;
+			remoteInfo = LiftLink;
+		};
+		6931F8A22BA27A0600EC023D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6931F87E2BA27A0400EC023D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6931F8852BA27A0400EC023D;
+			remoteInfo = LiftLink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6931F8862BA27A0400EC023D /* LiftLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiftLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6931F8892BA27A0400EC023D /* LiftLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftLinkApp.swift; sourceTree = "<group>"; };
+		6931F88B2BA27A0400EC023D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6931F88D2BA27A0600EC023D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6931F88F2BA27A0600EC023D /* LiftLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiftLink.entitlements; sourceTree = "<group>"; };
+		6931F8912BA27A0600EC023D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6931F8972BA27A0600EC023D /* LiftLinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftLinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6931F89B2BA27A0600EC023D /* LiftLinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftLinkTests.swift; sourceTree = "<group>"; };
+		6931F8A12BA27A0600EC023D /* LiftLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6931F8A52BA27A0600EC023D /* LiftLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftLinkUITests.swift; sourceTree = "<group>"; };
+		6931F8A72BA27A0600EC023D /* LiftLinkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftLinkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6931F8832BA27A0400EC023D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6931F8942BA27A0600EC023D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6931F89E2BA27A0600EC023D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6931F87D2BA27A0400EC023D = {
+			isa = PBXGroup;
+			children = (
+				6931F8882BA27A0400EC023D /* LiftLink */,
+				6931F89A2BA27A0600EC023D /* LiftLinkTests */,
+				6931F8A42BA27A0600EC023D /* LiftLinkUITests */,
+				6931F8872BA27A0400EC023D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6931F8872BA27A0400EC023D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6931F8862BA27A0400EC023D /* LiftLink.app */,
+				6931F8972BA27A0600EC023D /* LiftLinkTests.xctest */,
+				6931F8A12BA27A0600EC023D /* LiftLinkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6931F8882BA27A0400EC023D /* LiftLink */ = {
+			isa = PBXGroup;
+			children = (
+				6931F8892BA27A0400EC023D /* LiftLinkApp.swift */,
+				6931F88B2BA27A0400EC023D /* ContentView.swift */,
+				6931F88D2BA27A0600EC023D /* Assets.xcassets */,
+				6931F88F2BA27A0600EC023D /* LiftLink.entitlements */,
+				6931F8902BA27A0600EC023D /* Preview Content */,
+			);
+			path = LiftLink;
+			sourceTree = "<group>";
+		};
+		6931F8902BA27A0600EC023D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6931F8912BA27A0600EC023D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6931F89A2BA27A0600EC023D /* LiftLinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				6931F89B2BA27A0600EC023D /* LiftLinkTests.swift */,
+			);
+			path = LiftLinkTests;
+			sourceTree = "<group>";
+		};
+		6931F8A42BA27A0600EC023D /* LiftLinkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6931F8A52BA27A0600EC023D /* LiftLinkUITests.swift */,
+				6931F8A72BA27A0600EC023D /* LiftLinkUITestsLaunchTests.swift */,
+			);
+			path = LiftLinkUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6931F8852BA27A0400EC023D /* LiftLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6931F8AB2BA27A0600EC023D /* Build configuration list for PBXNativeTarget "LiftLink" */;
+			buildPhases = (
+				6931F8822BA27A0400EC023D /* Sources */,
+				6931F8832BA27A0400EC023D /* Frameworks */,
+				6931F8842BA27A0400EC023D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiftLink;
+			productName = LiftLink;
+			productReference = 6931F8862BA27A0400EC023D /* LiftLink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6931F8962BA27A0600EC023D /* LiftLinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6931F8AE2BA27A0600EC023D /* Build configuration list for PBXNativeTarget "LiftLinkTests" */;
+			buildPhases = (
+				6931F8932BA27A0600EC023D /* Sources */,
+				6931F8942BA27A0600EC023D /* Frameworks */,
+				6931F8952BA27A0600EC023D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6931F8992BA27A0600EC023D /* PBXTargetDependency */,
+			);
+			name = LiftLinkTests;
+			productName = LiftLinkTests;
+			productReference = 6931F8972BA27A0600EC023D /* LiftLinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6931F8A02BA27A0600EC023D /* LiftLinkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6931F8B12BA27A0600EC023D /* Build configuration list for PBXNativeTarget "LiftLinkUITests" */;
+			buildPhases = (
+				6931F89D2BA27A0600EC023D /* Sources */,
+				6931F89E2BA27A0600EC023D /* Frameworks */,
+				6931F89F2BA27A0600EC023D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6931F8A32BA27A0600EC023D /* PBXTargetDependency */,
+			);
+			name = LiftLinkUITests;
+			productName = LiftLinkUITests;
+			productReference = 6931F8A12BA27A0600EC023D /* LiftLinkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6931F87E2BA27A0400EC023D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					6931F8852BA27A0400EC023D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					6931F8962BA27A0600EC023D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 6931F8852BA27A0400EC023D;
+					};
+					6931F8A02BA27A0600EC023D = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 6931F8852BA27A0400EC023D;
+					};
+				};
+			};
+			buildConfigurationList = 6931F8812BA27A0400EC023D /* Build configuration list for PBXProject "LiftLink" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6931F87D2BA27A0400EC023D;
+			productRefGroup = 6931F8872BA27A0400EC023D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6931F8852BA27A0400EC023D /* LiftLink */,
+				6931F8962BA27A0600EC023D /* LiftLinkTests */,
+				6931F8A02BA27A0600EC023D /* LiftLinkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6931F8842BA27A0400EC023D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6931F8922BA27A0600EC023D /* Preview Assets.xcassets in Resources */,
+				6931F88E2BA27A0600EC023D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6931F8952BA27A0600EC023D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6931F89F2BA27A0600EC023D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6931F8822BA27A0400EC023D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6931F88C2BA27A0400EC023D /* ContentView.swift in Sources */,
+				6931F88A2BA27A0400EC023D /* LiftLinkApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6931F8932BA27A0600EC023D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6931F89C2BA27A0600EC023D /* LiftLinkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6931F89D2BA27A0600EC023D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6931F8A82BA27A0600EC023D /* LiftLinkUITestsLaunchTests.swift in Sources */,
+				6931F8A62BA27A0600EC023D /* LiftLinkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6931F8992BA27A0600EC023D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6931F8852BA27A0400EC023D /* LiftLink */;
+			targetProxy = 6931F8982BA27A0600EC023D /* PBXContainerItemProxy */;
+		};
+		6931F8A32BA27A0600EC023D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6931F8852BA27A0400EC023D /* LiftLink */;
+			targetProxy = 6931F8A22BA27A0600EC023D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6931F8A92BA27A0600EC023D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6931F8AA2BA27A0600EC023D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6931F8AC2BA27A0600EC023D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LiftLink/LiftLink.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LiftLink/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CowDomination.LiftLink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6931F8AD2BA27A0600EC023D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LiftLink/LiftLink.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LiftLink/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CowDomination.LiftLink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6931F8AF2BA27A0600EC023D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CowDomination.LiftLinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiftLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiftLink";
+			};
+			name = Debug;
+		};
+		6931F8B02BA27A0600EC023D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CowDomination.LiftLinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiftLink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiftLink";
+			};
+			name = Release;
+		};
+		6931F8B22BA27A0600EC023D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CowDomination.LiftLinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiftLink;
+			};
+			name = Debug;
+		};
+		6931F8B32BA27A0600EC023D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CowDomination.LiftLinkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiftLink;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6931F8812BA27A0400EC023D /* Build configuration list for PBXProject "LiftLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6931F8A92BA27A0600EC023D /* Debug */,
+				6931F8AA2BA27A0600EC023D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6931F8AB2BA27A0600EC023D /* Build configuration list for PBXNativeTarget "LiftLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6931F8AC2BA27A0600EC023D /* Debug */,
+				6931F8AD2BA27A0600EC023D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6931F8AE2BA27A0600EC023D /* Build configuration list for PBXNativeTarget "LiftLinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6931F8AF2BA27A0600EC023D /* Debug */,
+				6931F8B02BA27A0600EC023D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6931F8B12BA27A0600EC023D /* Build configuration list for PBXNativeTarget "LiftLinkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6931F8B22BA27A0600EC023D /* Debug */,
+				6931F8B32BA27A0600EC023D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6931F87E2BA27A0400EC023D /* Project object */;
+}

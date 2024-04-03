@@ -18,9 +18,8 @@ struct ContentView: View {
                     .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
                     .ignoresSafeArea()
                 
-                Button(action: {
-                    NavigationLink(destination:SignIn())
-                }) {
+            
+                NavigationLink(destination:SignIn()){
                     Image(.pfp)
                         .resizable()
                         .edgesIgnoringSafeArea(.top)

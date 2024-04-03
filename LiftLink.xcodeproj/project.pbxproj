@@ -14,6 +14,7 @@
 		6931F89C2BA27A0600EC023D /* LiftLinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F89B2BA27A0600EC023D /* LiftLinkTests.swift */; };
 		6931F8A62BA27A0600EC023D /* LiftLinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F8A52BA27A0600EC023D /* LiftLinkUITests.swift */; };
 		6931F8A82BA27A0600EC023D /* LiftLinkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F8A72BA27A0600EC023D /* LiftLinkUITestsLaunchTests.swift */; };
+		69A74E9D2BBCDC9700A8D694 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A74E9C2BBCDC9700A8D694 /* SignIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		6931F8A12BA27A0600EC023D /* LiftLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiftLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6931F8A52BA27A0600EC023D /* LiftLinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftLinkUITests.swift; sourceTree = "<group>"; };
 		6931F8A72BA27A0600EC023D /* LiftLinkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftLinkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69A74E9C2BBCDC9700A8D694 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				6931F8892BA27A0400EC023D /* LiftLinkApp.swift */,
 				6931F88B2BA27A0400EC023D /* ContentView.swift */,
+				69A74E9C2BBCDC9700A8D694 /* SignIn.swift */,
 				6931F88D2BA27A0600EC023D /* Assets.xcassets */,
 				6931F88F2BA27A0600EC023D /* LiftLink.entitlements */,
 				6931F8902BA27A0600EC023D /* Preview Content */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6931F88C2BA27A0400EC023D /* ContentView.swift in Sources */,
+				69A74E9D2BBCDC9700A8D694 /* SignIn.swift in Sources */,
 				6931F88A2BA27A0400EC023D /* LiftLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

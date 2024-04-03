@@ -9,13 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("work")
+        NavigationStack{
+            
+            ZStack{
+                
+                Image(.homepage)
+                    .resizable()
+                    .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                    .ignoresSafeArea()
+                
+                Button(action: {
+                    NavigationLink(destination:SignIn())
+                }) {
+                    Image(.pfp)
+                        .resizable()
+                        .edgesIgnoringSafeArea(.top)
+                        .frame(width: 60, height: 60)
+                }
+            }
         }
-        .padding()
     }
 }
 

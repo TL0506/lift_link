@@ -23,7 +23,7 @@ struct Chat: View {
                        }
                        .padding(.top, 10)
                        .background(.white)
-                       .cornerRadius(30, corners: [.topLeft, .topRight]) // Custom cornerRadius modifier added in Extensions file
+                       .cornerRadius(30)
                        .onChange(of: messagesManager.lastMessageId) { id in
                            // When the lastMessageId changes, scroll to the bottom of the conversation
                            withAnimation {

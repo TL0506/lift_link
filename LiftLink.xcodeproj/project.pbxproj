@@ -24,6 +24,8 @@
 		69A1C1652BC0DB2300AF0534 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 69A1C1642BC0DB2300AF0534 /* FirebaseFirestoreSwift */; };
 		69A1C1672BC0DD5200AF0534 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C1662BC0DD5200AF0534 /* MessagesManager.swift */; };
 		69A1C1692BC0E1A800AF0534 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C1682BC0E1A800AF0534 /* MessageField.swift */; };
+		69A1C16B2BC2F2EA00AF0534 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C16A2BC2F2EA00AF0534 /* Map.swift */; };
+		69A1C16D2BC2F63700AF0534 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C16C2BC2F63700AF0534 /* Leaderboard.swift */; };
 		69A74E9D2BBCDC9700A8D694 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A74E9C2BBCDC9700A8D694 /* SignIn.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		69A1C1562BC0D44C00AF0534 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		69A1C1662BC0DD5200AF0534 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 		69A1C1682BC0E1A800AF0534 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		69A1C16A2BC2F2EA00AF0534 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		69A1C16C2BC2F63700AF0534 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		69A74E9C2BBCDC9700A8D694 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,8 +125,10 @@
 				69A1C1562BC0D44C00AF0534 /* Extensions.swift */,
 				69A1C1662BC0DD5200AF0534 /* MessagesManager.swift */,
 				6931F8892BA27A0400EC023D /* LiftLinkApp.swift */,
+				69A1C16C2BC2F63700AF0534 /* Leaderboard.swift */,
 				6931F88B2BA27A0400EC023D /* ContentView.swift */,
 				69A1C13C2BBF64EC00AF0534 /* Chat.swift */,
+				69A1C16A2BC2F2EA00AF0534 /* Map.swift */,
 				69A74E9C2BBCDC9700A8D694 /* SignIn.swift */,
 				69A1C1512BC0B42D00AF0534 /* Models */,
 				69A1C14E2BC0AA8C00AF0534 /* Components */,
@@ -315,12 +321,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6931F88C2BA27A0400EC023D /* ContentView.swift in Sources */,
+				69A1C16D2BC2F63700AF0534 /* Leaderboard.swift in Sources */,
 				69A1C13D2BBF64EC00AF0534 /* Chat.swift in Sources */,
 				69A1C1692BC0E1A800AF0534 /* MessageField.swift in Sources */,
 				69A74E9D2BBCDC9700A8D694 /* SignIn.swift in Sources */,
 				69A1C15D2BC0D54600AF0534 /* Extensions.swift in Sources */,
 				69A1C1552BC0B5DB00AF0534 /* MessageBubble.swift in Sources */,
 				69A1C1532BC0B4B000AF0534 /* Message.swift in Sources */,
+				69A1C16B2BC2F2EA00AF0534 /* Map.swift in Sources */,
 				69A1C1502BC0AAD000AF0534 /* TitleRow.swift in Sources */,
 				6931F88A2BA27A0400EC023D /* LiftLinkApp.swift in Sources */,
 				69A1C1672BC0DD5200AF0534 /* MessagesManager.swift in Sources */,

@@ -27,6 +27,7 @@
 		69A1C16B2BC2F2EA00AF0534 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C16A2BC2F2EA00AF0534 /* Map.swift */; };
 		69A1C16D2BC2F63700AF0534 /* Leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1C16C2BC2F63700AF0534 /* Leaderboard.swift */; };
 		69A74E9D2BBCDC9700A8D694 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A74E9C2BBCDC9700A8D694 /* SignIn.swift */; };
+		E05578672BC9958300176F75 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05578662BC9958300176F75 /* login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		69A1C16A2BC2F2EA00AF0534 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		69A1C16C2BC2F63700AF0534 /* Leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leaderboard.swift; sourceTree = "<group>"; };
 		69A74E9C2BBCDC9700A8D694 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		E05578662BC9958300176F75 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				69A1C1482BBF6B2200AF0534 /* GoogleService-Info.plist */,
 				69A1C1562BC0D44C00AF0534 /* Extensions.swift */,
+				E05578662BC9958300176F75 /* login.swift */,
 				69A1C1662BC0DD5200AF0534 /* MessagesManager.swift */,
 				6931F8892BA27A0400EC023D /* LiftLinkApp.swift */,
 				69A1C16C2BC2F63700AF0534 /* Leaderboard.swift */,
@@ -323,6 +326,7 @@
 				6931F88C2BA27A0400EC023D /* ContentView.swift in Sources */,
 				69A1C16D2BC2F63700AF0534 /* Leaderboard.swift in Sources */,
 				69A1C13D2BBF64EC00AF0534 /* Chat.swift in Sources */,
+				E05578672BC9958300176F75 /* login.swift in Sources */,
 				69A1C1692BC0E1A800AF0534 /* MessageField.swift in Sources */,
 				69A74E9D2BBCDC9700A8D694 /* SignIn.swift in Sources */,
 				69A1C15D2BC0D54600AF0534 /* Extensions.swift in Sources */,

@@ -38,10 +38,11 @@ struct login: View {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 170, height: 40)
                 .padding(.top, 440)
-                .foregroundColor(.cyan)
+                .foregroundColor(Color("DarkGreen"))
             Text("Log in")
+                .font(.system(size: 20))
                 .padding(.top, 440)
-                .fontWeight(.bold)
+                .fontWeight(.light)
                 .foregroundColor(.white)
         }
     }

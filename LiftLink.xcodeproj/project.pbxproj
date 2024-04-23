@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		692CD7CE2BD76F2400E2232B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 692CD7CD2BD76F2400E2232B /* FirebaseAuth */; };
+		692CD7D02BD77E0100E2232B /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692CD7CF2BD77E0100E2232B /* profile.swift */; };
 		6931F88A2BA27A0400EC023D /* LiftLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F8892BA27A0400EC023D /* LiftLinkApp.swift */; };
 		6931F88C2BA27A0400EC023D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F88B2BA27A0400EC023D /* ContentView.swift */; };
 		6931F88E2BA27A0600EC023D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6931F88D2BA27A0600EC023D /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		692CD7CF2BD77E0100E2232B /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 		6931F8862BA27A0400EC023D /* LiftLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiftLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6931F8892BA27A0400EC023D /* LiftLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftLinkApp.swift; sourceTree = "<group>"; };
 		6931F88B2BA27A0400EC023D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				69A1C1562BC0D44C00AF0534 /* Extensions.swift */,
 				E05578662BC9958300176F75 /* login.swift */,
 				69A1C1662BC0DD5200AF0534 /* MessagesManager.swift */,
+				692CD7CF2BD77E0100E2232B /* profile.swift */,
 				6931F8892BA27A0400EC023D /* LiftLinkApp.swift */,
 				69A1C16C2BC2F63700AF0534 /* Leaderboard.swift */,
 				6931F88B2BA27A0400EC023D /* ContentView.swift */,
@@ -340,6 +343,7 @@
 				6931F88C2BA27A0400EC023D /* ContentView.swift in Sources */,
 				6975325A2BD7607200B3ADF8 /* signup.swift in Sources */,
 				69A1C16D2BC2F63700AF0534 /* Leaderboard.swift in Sources */,
+				692CD7D02BD77E0100E2232B /* profile.swift in Sources */,
 				69A1C13D2BBF64EC00AF0534 /* Chat.swift in Sources */,
 				E05578672BC9958300176F75 /* login.swift in Sources */,
 				69A1C1692BC0E1A800AF0534 /* MessageField.swift in Sources */,

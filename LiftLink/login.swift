@@ -11,7 +11,15 @@ import FirebaseAuth
 struct login: View {
     @State private var email = ""
     @State private var password = ""
-    var body: some View {
+    @State private var userIsLoggedIn = false
+    var body: some View{
+        if userIsLoggedIn{
+            // go somewhere
+        }else{
+            profile()
+        }
+    }
+    var content: some View {
         ZStack {
             Image(.login)
                 .resizable(resizingMode: .stretch)
@@ -48,6 +56,14 @@ struct login: View {
                     .padding(.top, 440)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
+            }
+            .onAppear(){
+                Auth.auth().addStateDidChangeListener{
+                    auth, user in
+                    if user != nil{
+                        userIsLoggedIn.toggle()
+                    }
+                }
             }
         }
     }

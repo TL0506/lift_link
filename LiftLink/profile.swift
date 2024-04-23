@@ -2,7 +2,7 @@
 //  profile.swift
 //  LiftLink
 //
-//  Created by Tiffany Lin on 4/23/24.
+//  Created by Wang, Selina on 4/23/24.
 //
 
 import SwiftUI

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		
 		6931F88A2BA27A0400EC023D /* LiftLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F8892BA27A0400EC023D /* LiftLinkApp.swift */; };
 		6931F88C2BA27A0400EC023D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6931F88B2BA27A0400EC023D /* ContentView.swift */; };
 		6931F88E2BA27A0600EC023D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6931F88D2BA27A0600EC023D /* Assets.xcassets */; };
@@ -32,6 +31,8 @@
 		E05578692BC9C13400176F75 /* signUp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05578682BC9C13400176F75 /* signUp1.swift */; };
 		E055786B2BC9C1C100176F75 /* volunteerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E055786A2BC9C1C100176F75 /* volunteerPage.swift */; };
 		E055786D2BC9C6C800176F75 /* organizerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E055786C2BC9C6C800176F75 /* organizerPage.swift */; };
+		E09B3A9B2BD8249C001FF658 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E09B3A9A2BD8249C001FF658 /* FirebaseAuth */; };
+		E09B3A9D2BD824FD001FF658 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B3A9C2BD824FD001FF658 /* profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		E05578682BC9C13400176F75 /* signUp1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp1.swift; sourceTree = "<group>"; };
 		E055786A2BC9C1C100176F75 /* volunteerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volunteerPage.swift; sourceTree = "<group>"; };
 		E055786C2BC9C6C800176F75 /* organizerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = organizerPage.swift; sourceTree = "<group>"; };
+		E09B3A9C2BD824FD001FF658 /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69A1C1632BC0DB2300AF0534 /* FirebaseFirestore in Frameworks */,
+				E09B3A9B2BD8249C001FF658 /* FirebaseAuth in Frameworks */,
 				69A1C1652BC0DB2300AF0534 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +110,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-    
 		6931F87D2BA27A0400EC023D = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +117,7 @@
 				6931F89A2BA27A0600EC023D /* LiftLinkTests */,
 				6931F8A42BA27A0600EC023D /* LiftLinkUITests */,
 				6931F8872BA27A0400EC023D /* Products */,
+				E09B3A992BD8249C001FF658 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +140,7 @@
 				E05578662BC9958300176F75 /* login.swift */,
 				69A1C1662BC0DD5200AF0534 /* MessagesManager.swift */,
 				6931F8892BA27A0400EC023D /* LiftLinkApp.swift */,
+				E09B3A9C2BD824FD001FF658 /* profile.swift */,
 				E055786A2BC9C1C100176F75 /* volunteerPage.swift */,
 				E05578682BC9C13400176F75 /* signUp1.swift */,
 				69A1C16C2BC2F63700AF0534 /* Leaderboard.swift */,
@@ -196,6 +200,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E09B3A992BD8249C001FF658 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,6 +226,7 @@
 			packageProductDependencies = (
 				69A1C1622BC0DB2300AF0534 /* FirebaseFirestore */,
 				69A1C1642BC0DB2300AF0534 /* FirebaseFirestoreSwift */,
+				E09B3A9A2BD8249C001FF658 /* FirebaseAuth */,
 			);
 			productName = LiftLink;
 			productReference = 6931F8862BA27A0400EC023D /* LiftLink.app */;
@@ -336,7 +348,6 @@
 			files = (
 				6931F88C2BA27A0400EC023D /* ContentView.swift in Sources */,
 				E055786B2BC9C1C100176F75 /* volunteerPage.swift in Sources */,
-
 				69A1C16D2BC2F63700AF0534 /* Leaderboard.swift in Sources */,
 				69A1C13D2BBF64EC00AF0534 /* Chat.swift in Sources */,
 				E05578692BC9C13400176F75 /* signUp1.swift in Sources */,
@@ -346,6 +357,7 @@
 				69A1C15D2BC0D54600AF0534 /* Extensions.swift in Sources */,
 				69A1C1552BC0B5DB00AF0534 /* MessageBubble.swift in Sources */,
 				69A1C1532BC0B4B000AF0534 /* Message.swift in Sources */,
+				E09B3A9D2BD824FD001FF658 /* profile.swift in Sources */,
 				69A1C16B2BC2F2EA00AF0534 /* Map.swift in Sources */,
 				E055786D2BC9C6C800176F75 /* organizerPage.swift in Sources */,
 				69A1C1502BC0AAD000AF0534 /* TitleRow.swift in Sources */,
@@ -721,6 +733,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 69A1C1612BC0DB2300AF0534 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestoreSwift;
+		};
+		E09B3A9A2BD8249C001FF658 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 69A1C1612BC0DB2300AF0534 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

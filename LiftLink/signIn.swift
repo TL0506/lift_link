@@ -14,28 +14,31 @@ struct SignIn: View {
                 Image(.account)
                     .resizable(resizingMode: .stretch)
                     .ignoresSafeArea()
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: 170, height: 40)
-                    .padding(.top)
-                    .foregroundColor(.darkGreen)
-               
-                NavigationLink(destination: signup()){
-                    Text("Sign Up")
-                        .padding(.top)
-                        .fontWeight(.bold)
+                VStack {
+                    NavigationLink(destination: signUp1()) {
+                        RoundedRectangle(cornerRadius: 20)
+                            .frame(width: 180, height: 50)
+                            .foregroundColor(Color("DarkGreen"))
+                            .padding(.top, 60)
+                    }
+                    Text("Sign up")
+                        .font(.system(size: 29))
+                        .padding(.bottom)
                         .foregroundColor(.white)
-                }
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: 170, height: 40)
-                    .padding(.top,200)
-                    .foregroundColor(.darkGreen)
-           
-                NavigationLink(destination: login()){
+                        .offset(x: 0, y: -52)
+                    
+                    NavigationLink(destination: login()) {
+                        RoundedRectangle(cornerRadius: 20)
+                            .frame(width: 180, height: 50)
+                            .foregroundColor(Color("DarkGreen"))
+                    }
                     Text("Log in")
-                        .padding(.top, 200)
-                        .fontWeight(.bold)
+                        .font(.system(size: 29))
                         .foregroundColor(.white)
+                        .offset(x: 0, y: -52)
                 }
+                
+        
             }
         }
     }

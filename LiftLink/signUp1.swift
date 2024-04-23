@@ -1,49 +1,66 @@
 //
-//  signUp1.swift
-//  LiftLink
-//
-//  Created by Wang, Selina on 4/12/24.
-//
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 struct signUp1: View {
+    @State private var email = ""
+    @State private var password = ""
     var body: some View {
-        NavigationView {
-            ZStack {
-                Image(.signup)
-                    .resizable(resizingMode: .stretch)
-                    .ignoresSafeArea()
-                    .scaledToFill()
-                VStack {
-                    NavigationLink(destination: volunteerPage()) {
-                        RoundedRectangle(cornerRadius: 20)
-                            .frame(width: 300, height: 65)
-                            .foregroundColor(Color("DarkGreen"))
-                            .padding(.top, 60)
-                    }
-                    Text("Volunteer")
-                        .font(.system(size: 29))
-                        .fontWeight(.medium)
-                        .padding(.bottom)
-                        .foregroundColor(.white)
-                        .offset(x: 0, y: -62)
-                    NavigationLink(destination: organizerPage()) {
-                        RoundedRectangle(cornerRadius: 20)
-                            .frame(width: 300, height: 65)
-                            .foregroundColor(Color("DarkGreen"))
-                    }
-                    Text("Organization")
-                        .font(.system(size: 29))
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
-                        .offset(x: 0, y: -62)
-                }
-                
+        ZStack {
+            Image(.signup)
+                .resizable(resizingMode: .stretch)
+                .ignoresSafeArea()
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: 330, height: 65)
+                .padding(.bottom, 20)
+                .foregroundColor(.white)
+            TextField("Enter Email...", text: $email, axis: .vertical)
+                .padding(.top, 175)
+                .frame(width: 290.0, height: 250.0)
+                .multilineTextAlignment(.leading)
+                .padding(.vertical, 110.0)
+                .lineLimit(10, reservesSpace: true)
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: 330, height: 65)
+                .padding(.top, 250)
+                .foregroundColor(.white)
+            SecureField("Enter Password...", text: $password)
+                .padding(.top, 255)
+                .frame(width: 290.0, height: 250.0)
+                .multilineTextAlignment(.leading)
+                .padding(.vertical, 110.0)
+                .lineLimit(10, reservesSpace: true)
+
+
+            RoundedRectangle(cornerRadius: 10)
+                .frame(width: 170, height: 40)
+                .padding(.top, 440)
+                .foregroundColor(.cyan)
+            Button{
+                register()
+            } label: {
+                Text("Sign up")
+                    .padding(.top, 440)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+
+            }
+
+
+        }
+    }
+    func register(){
+        Auth.auth().createUser(withEmail: email, password: password){ result, error in
+            if error != nil{
+                print(error!.localizedDescription)
             }
         }
     }
 }
+
+
 
 #Preview {
     signUp1()

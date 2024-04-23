@@ -6,19 +6,19 @@
 //
 
 import SwiftUI
-import Firebase
+import Firebase // Don't forget to import Firebase
 
 @main
-struct LiftLInkApp: App {
+struct LiftLinkApp: App {
     init(){
         FirebaseApp.configure()
     }
   
-  var body: some Scene {
-    WindowGroup {
-      NavigationView {
-        ContentView()
-      }
+    var body: some Scene {
+        WindowGroup {
+            NavigationView {
+                ContentView() // Make sure ContentView is implemented correctly
+            }
+        }
     }
-  }
 }

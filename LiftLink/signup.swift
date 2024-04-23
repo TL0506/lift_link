@@ -1,27 +1,20 @@
 //
-//  login.swift
+//  signup.swift
 //  LiftLink
 //
-//  Created by Wang, Selina on 4/12/24.
+//  Created by Tiffany Lin on 4/22/24.
 //
 
 import SwiftUI
 import Firebase
 import FirebaseAuth
-struct login: View {
+
+struct signup: View {
     @State private var email = ""
     @State private var password = ""
-    @State private var userIsLoggedIn = false
-    var body: some View{
-        if userIsLoggedIn{
-            // go somewhere
-        }else{
-            profile()
-        }
-    }
-    var content: some View {
+    var body: some View {
         ZStack {
-            Image(.login)
+            Image(.signup)
                 .resizable(resizingMode: .stretch)
                 .ignoresSafeArea()
             RoundedRectangle(cornerRadius: 20)
@@ -48,43 +41,31 @@ struct login: View {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 170, height: 40)
                 .padding(.top, 440)
-<<<<<<< HEAD
-                .foregroundColor(Color("DarkGreen"))
-            Text("Log in")
-                .font(.system(size: 20))
-                .padding(.top, 440)
-                .fontWeight(.light)
-                .foregroundColor(.white)
-=======
                 .foregroundColor(.cyan)
             Button{
-                login()
+                register()
             } label: {
-                Text("Log in")
+                Text("Sign up")
                     .padding(.top, 440)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
+                
             }
-            .onAppear(){
-                Auth.auth().addStateDidChangeListener{
-                    auth, user in
-                    if user != nil{
-                        userIsLoggedIn.toggle()
-                    }
-                }
-            }
+            
+            
         }
     }
-    func login(){
-        Auth.auth().signIn(withEmail: email, password: password){ result, error in
+    func register(){
+        Auth.auth().createUser(withEmail: email, password: password){ result, error in
             if error != nil{
                 print(error!.localizedDescription)
             }
->>>>>>> main
         }
     }
 }
+    
+
 
 #Preview {
-    login()
+    signup()
 }

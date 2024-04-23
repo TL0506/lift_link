@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleIdentifier</key>
+	<string></string>
 	<key>API_KEY</key>
 	<string>AIzaSyAkOQ8vIPkApYIqGXndrFE_emi-4YAxO1w</string>
 	<key>GCM_SENDER_ID</key>
@@ -15,16 +17,20 @@
 	<key>STORAGE_BUCKET</key>
 	<string>liftlink-e6cca.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:846927822215:ios:2715b159d715ae01812722</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your accurate location for safety purposes</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need your accurate location for safety purposes</string>
 </dict>
 </plist>

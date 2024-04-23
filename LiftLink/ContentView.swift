@@ -1,54 +1,51 @@
-//
-//  ContentView.swift
-//  LiftLink
-//
-//  Created by Tiffany Lin on 3/13/24.
-//
-
 import SwiftUI
-import _MapKit_SwiftUI
+import MapKit
 
 struct ContentView: View {
-    var body: some View {
-        
-        NavigationStack {
+    @State private var centerCoordinate = CLLocationCoordinate2D()
+    @State private var annotations = [MKPointAnnotation]()
 
+    var body: some View {
+        NavigationStack {
             ZStack {
-                Image(.homepage)
-                    .resizable(resizingMode: .stretch)
+                MapView(centerCoordinate: $centerCoordinate, annotations: $annotations)
+                    .ignoresSafeArea()
+                
+                Image("homepage")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .ignoresSafeArea()
                 
                 VStack {
                     Spacer()
                     HStack {
-                        Image(.homeicon)
-                                .resizable(capInsets: EdgeInsets(top: 50.0, leading: 10.0, bottom: 0.0, trailing: 0.0))
-                                .frame(width: 90,
-                                     height: 125)
-                
+                        Image("homeicon")
+                            .resizable()
+                            .frame(width: 90, height: 125)
+                        
                         Spacer()
                         NavigationLink(destination: Chat()) {
-                            Image(.chaticon)
-                                .resizable(capInsets: EdgeInsets(top: 40.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
+                            Image("chaticon")
+                                .resizable()
                                 .frame(width: 70, height: 120)
                         }
                         Spacer()
                         NavigationLink(destination: Leaderboard()) {
-                            Image(.leaderboard)
-                                .resizable(capInsets: EdgeInsets(top: 40.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
-                                .frame(width: 80.0, height: 130.0)
+                            Image("leaderboard")
+                                .resizable()
+                                .frame(width: 80, height: 130)
                         }
                         Spacer()
                         NavigationLink(destination: Map()) {
-                            Image(.mapicon)
-                                .resizable(capInsets: EdgeInsets(top: 40.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
-                                .frame(width: 90.0, height: 130.0)
+                            Image("mapicon")
+                                .resizable()
+                                .frame(width: 90, height: 130)
                         }
                         Spacer()
                         NavigationLink(destination: SignIn()) {
-                            Image(.pfp)
-                                .resizable(capInsets: EdgeInsets(top: 40.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
-                                .frame(width: 65.0, height: 120.0)
+                            Image("pfp")
+                                .resizable()
+                                .frame(width: 65, height: 120)
                             
                         }
                         Spacer()
@@ -56,10 +53,8 @@ struct ContentView: View {
                     .padding(.top)
                     .padding(.leading)
                     .padding(.trailing)
-
                 }
             }
-            
         }
     }
 }

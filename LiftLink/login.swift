@@ -48,6 +48,14 @@ struct login: View {
             RoundedRectangle(cornerRadius: 10)
                 .frame(width: 170, height: 40)
                 .padding(.top, 440)
+<<<<<<< HEAD
+                .foregroundColor(Color("DarkGreen"))
+            Text("Log in")
+                .font(.system(size: 20))
+                .padding(.top, 440)
+                .fontWeight(.light)
+                .foregroundColor(.white)
+=======
                 .foregroundColor(.cyan)
             Button{
                 login()
@@ -72,6 +80,7 @@ struct login: View {
             if error != nil{
                 print(error!.localizedDescription)
             }
+>>>>>>> main
         }
     }
 }

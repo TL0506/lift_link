@@ -47,17 +47,18 @@ struct Survey: View {
                         .padding(.vertical, 110.0)
                         .lineLimit(10, reservesSpace: true)
                     
-                    NavigationLink(destination: ThankYou()) {
-                        RoundedRectangle(cornerRadius: 20)
-                            .frame(width: 180, height: 50)
-                            .foregroundColor(Color("DarkGreen"))
-                            .offset(x: 0, y: 360)
-                    }
+             
                     
                     Text("Submit")
                         .font(.system(size: 29))
                         .foregroundColor(.white)
                         .offset(x: 0, y: 360)
+                NavigationLink(destination: ThankYou()) {
+                    RoundedRectangle(cornerRadius: 20)
+                        .frame(width: 180, height: 50)
+                        .foregroundColor(Color("DarkGreen"))
+                        .offset(x: 0, y: 360)
+                }
                 }
             }
     }

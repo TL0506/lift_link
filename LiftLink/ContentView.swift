@@ -4,6 +4,10 @@ import MapKit
 struct ContentView: View {
     @State private var centerCoordinate = CLLocationCoordinate2D()
     @State private var annotations = [MKPointAnnotation]()
+    @StateObject private var viewModel = MapViewModel()
+    @State private var showingPlaceDetails = false
+    @State private var locationLabel = ""
+    @State private var selectedPlace: MKPointAnnotation?
 
     var body: some View {
         
@@ -32,7 +36,7 @@ struct ContentView: View {
                                 .frame(width: 80.0, height: 130.0)
                         }
                         Spacer()
-                        NavigationLink(destination: Map()) {
+                        NavigationLink(destination: MapView(centerCoordinate: $viewModel.centerCoordinate, annotations: $viewModel.annotations, selectedPlace: $selectedPlace, showingPlaceDetails: $showingPlaceDetails)) {
                             Image("mapicon")
                                 .resizable(capInsets: EdgeInsets(top: 40.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
                                 .frame(width: 90.0, height: 130.0)

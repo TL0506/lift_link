@@ -35,10 +35,12 @@
 		E084DD652BD8CF91003C397A /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DD642BD8CF91003C397A /* Survey.swift */; };
 		E084DD692BD95875003C397A /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DD682BD95875003C397A /* MapViewModel.swift */; };
 		E084DD6B2BD958BB003C397A /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DD6A2BD958BB003C397A /* ContentView1.swift */; };
-		E084DD702BD964BB003C397A /* YourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DD6F2BD964BB003C397A /* YourViewController.swift */; };
 		E09B3A9B2BD8249C001FF658 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E09B3A9A2BD8249C001FF658 /* FirebaseAuth */; };
 		E09B3A9D2BD824FD001FF658 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B3A9C2BD824FD001FF658 /* profile.swift */; };
 		E0A044622BD96A7200AF4F8C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A044612BD96A7100AF4F8C /* ImagePicker.swift */; };
+		E0A08C802BD988190049886E /* ThankYou.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A08C7F2BD988190049886E /* ThankYou.swift */; };
+		E0A08C822BD98EB10049886E /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A08C812BD98EB10049886E /* ProfileViewViewModel.swift */; };
+		E0A08C842BD98ECF0049886E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A08C832BD98ECF0049886E /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,9 +93,11 @@
 		E084DD6A2BD958BB003C397A /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
 		E084DD6C2BD95EBE003C397A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E084DD6E2BD96240003C397A /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Location.gpx; path = LiftLink/Location.gpx; sourceTree = "<group>"; };
-		E084DD6F2BD964BB003C397A /* YourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourViewController.swift; sourceTree = "<group>"; };
 		E09B3A9C2BD824FD001FF658 /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 		E0A044612BD96A7100AF4F8C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E0A08C7F2BD988190049886E /* ThankYou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYou.swift; sourceTree = "<group>"; };
+		E0A08C812BD98EB10049886E /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
+		E0A08C832BD98ECF0049886E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,13 +158,15 @@
 				69A1C1482BBF6B2200AF0534 /* GoogleService-Info.plist */,
 				E0A044612BD96A7100AF4F8C /* ImagePicker.swift */,
 				69A1C1562BC0D44C00AF0534 /* Extensions.swift */,
-				E084DD6F2BD964BB003C397A /* YourViewController.swift */,
+				E0A08C832BD98ECF0049886E /* ProfileView.swift */,
 				E084DD642BD8CF91003C397A /* Survey.swift */,
 				E055786C2BC9C6C800176F75 /* organizerPage.swift */,
 				E05578662BC9958300176F75 /* login.swift */,
 				69A1C1662BC0DD5200AF0534 /* MessagesManager.swift */,
+				E0A08C812BD98EB10049886E /* ProfileViewViewModel.swift */,
 				6931F8892BA27A0400EC023D /* LiftLinkApp.swift */,
 				E084DD6A2BD958BB003C397A /* ContentView1.swift */,
+				E0A08C7F2BD988190049886E /* ThankYou.swift */,
 				E09B3A9C2BD824FD001FF658 /* profile.swift */,
 				E084DD682BD95875003C397A /* MapViewModel.swift */,
 				E055786A2BC9C1C100176F75 /* volunteerPage.swift */,
@@ -374,16 +380,18 @@
 				69A1C16D2BC2F63700AF0534 /* Leaderboard.swift in Sources */,
 				69A1C13D2BBF64EC00AF0534 /* Chat.swift in Sources */,
 				E05578692BC9C13400176F75 /* signUp1.swift in Sources */,
-				E084DD702BD964BB003C397A /* YourViewController.swift in Sources */,
 				E05578672BC9958300176F75 /* login.swift in Sources */,
 				E0A044622BD96A7200AF4F8C /* ImagePicker.swift in Sources */,
 				69A1C1692BC0E1A800AF0534 /* MessageField.swift in Sources */,
+				E0A08C822BD98EB10049886E /* ProfileViewViewModel.swift in Sources */,
 				9B9EE8032BD848230007AAD6 /* MapView.swift in Sources */,
 				E084DD6B2BD958BB003C397A /* ContentView1.swift in Sources */,
+				E0A08C802BD988190049886E /* ThankYou.swift in Sources */,
 				69A74E9D2BBCDC9700A8D694 /* SignIn.swift in Sources */,
 				E084DD652BD8CF91003C397A /* Survey.swift in Sources */,
 				69A1C15D2BC0D54600AF0534 /* Extensions.swift in Sources */,
 				E084DD692BD95875003C397A /* MapViewModel.swift in Sources */,
+				E0A08C842BD98ECF0049886E /* ProfileView.swift in Sources */,
 				69A1C1552BC0B5DB00AF0534 /* MessageBubble.swift in Sources */,
 				69A1C1532BC0B4B000AF0534 /* Message.swift in Sources */,
 				E09B3A9D2BD824FD001FF658 /* profile.swift in Sources */,

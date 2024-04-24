@@ -36,9 +36,8 @@ struct SignIn: View {
                         .font(.system(size: 29))
                         .foregroundColor(.white)
                         .offset(x: 0, y: -52)
+                    
                 }
-                
-        
             }
         }
     }

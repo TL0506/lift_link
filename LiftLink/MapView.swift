@@ -9,12 +9,16 @@ struct MapView: UIViewRepresentable {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
         mapView.showsUserLocation = true
-        context.coordinator.mapView = mapView // Store a reference to the map view
+        context.coordinator.setMapView(mapView) // Pass the map view to the coordinator
         return mapView
     }
 
     func updateUIView(_ view: MKMapView, context: Context) {
         // If you need to make changes to the map view when the view updates, do it here
+        if annotations.count != view.annotations.count {
+            view.removeAnnotations(view.annotations)
+            view.addAnnotations(annotations)
+        }
     }
 
     func makeCoordinator() -> Coordinator {
@@ -23,43 +27,48 @@ struct MapView: UIViewRepresentable {
 
     class Coordinator: NSObject, MKMapViewDelegate, CLLocationManagerDelegate {
         var parent: MapView
-        weak var mapView: MKMapView? // Make it weak to avoid retain cycles
-        let locationManager = CLLocationManager()
+        var locationManager = CLLocationManager()
+        weak var mapView: MKMapView? // Add this property to hold the MKMapView reference
 
         init(_ parent: MapView) {
             self.parent = parent
             super.init()
             locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.requestWhenInUseAuthorization()
+        }
+
+        func setMapView(_ mapView: MKMapView) { // Add this function to set the map view
+            self.mapView = mapView
         }
 
         func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
             switch manager.authorizationStatus {
-            case .notDetermined:
-                manager.requestWhenInUseAuthorization()
-            case .authorizedWhenInUse, .authorizedAlways:
-                manager.startUpdatingLocation()
-            case .restricted, .denied:
-                // Location services are restricted or denied. Handle accordingly.
+            case .notDetermined, .restricted, .denied:
+                // Do nothing if not determined, restricted, or denied
                 break
-            default:
+            case .authorizedWhenInUse, .authorizedAlways:
+                manager.startUpdatingLocation() // Start updating location
+            @unknown default:
                 break
             }
 
-            // For iOS 14 and above
+            // For iOS 14 and above, check if you need to request temporary full accuracy
             if #available(iOS 14.0, *), manager.accuracyAuthorization != .fullAccuracy {
-                // Request temporary full accuracy authorization.
-                manager.requestTemporaryFullAccuracyAuthorization(withPurposeKey: "YourPurposeKeyHere")
+                manager.requestTemporaryFullAccuracyAuthorization(withPurposeKey: "Privacy - Location When In Use Usage Description")
             }
         }
 
         func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            if let location = locations.last {
-                DispatchQueue.main.async {
-                    self.parent.centerCoordinate = location.coordinate // Update the binding
-                    let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
-                    self.mapView?.setRegion(region, animated: true)
-                }
+            guard let location = locations.last else { return }
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.parent.centerCoordinate = location.coordinate
+                let region = MKCoordinateRegion(
+                    center: location.coordinate,
+                    latitudinalMeters: 1000,
+                    longitudinalMeters: 1000
+                )
             }
         }
     }

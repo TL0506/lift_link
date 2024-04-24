@@ -6,46 +6,42 @@ struct ContentView: View {
     @State private var annotations = [MKPointAnnotation]()
 
     var body: some View {
+        
         NavigationStack {
             ZStack {
-                MapView(centerCoordinate: $centerCoordinate, annotations: $annotations)
-                    .ignoresSafeArea()
-                
                 Image("homepage")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .resizable(resizingMode: .stretch)
                     .ignoresSafeArea()
-                
                 VStack {
                     Spacer()
                     HStack {
                         Image("homeicon")
-                            .resizable()
+                            .resizable(capInsets: EdgeInsets(top: 50.0, leading: 10.0, bottom: 0.0, trailing: 0.0))
                             .frame(width: 90, height: 125)
                         
                         Spacer()
                         NavigationLink(destination: Chat()) {
                             Image("chaticon")
-                                .resizable()
+                                .resizable(capInsets: EdgeInsets(top: 40.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
                                 .frame(width: 70, height: 120)
                         }
                         Spacer()
                         NavigationLink(destination: Leaderboard()) {
                             Image("leaderboard")
-                                .resizable()
-                                .frame(width: 80, height: 130)
+                                .resizable(capInsets: EdgeInsets(top: 40.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
+                                .frame(width: 80.0, height: 130.0)
                         }
                         Spacer()
                         NavigationLink(destination: Map()) {
                             Image("mapicon")
-                                .resizable()
-                                .frame(width: 90, height: 130)
+                                .resizable(capInsets: EdgeInsets(top: 40.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
+                                .frame(width: 90.0, height: 130.0)
                         }
                         Spacer()
                         NavigationLink(destination: SignIn()) {
                             Image("pfp")
-                                .resizable()
-                                .frame(width: 65, height: 120)
+                                .resizable(capInsets: EdgeInsets(top: 40.0, leading: 0.0, bottom: 0.0, trailing: 0.0))
+                                .frame(width: 65.0, height: 120.0)
                             
                         }
                         Spacer()

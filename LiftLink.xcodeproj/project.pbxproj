@@ -32,6 +32,7 @@
 		E05578692BC9C13400176F75 /* signUp1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05578682BC9C13400176F75 /* signUp1.swift */; };
 		E055786B2BC9C1C100176F75 /* volunteerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E055786A2BC9C1C100176F75 /* volunteerPage.swift */; };
 		E055786D2BC9C6C800176F75 /* organizerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E055786C2BC9C6C800176F75 /* organizerPage.swift */; };
+		E084DD652BD8CF91003C397A /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E084DD642BD8CF91003C397A /* Survey.swift */; };
 		E09B3A9B2BD8249C001FF658 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E09B3A9A2BD8249C001FF658 /* FirebaseAuth */; };
 		E09B3A9D2BD824FD001FF658 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09B3A9C2BD824FD001FF658 /* profile.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		E05578682BC9C13400176F75 /* signUp1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp1.swift; sourceTree = "<group>"; };
 		E055786A2BC9C1C100176F75 /* volunteerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = volunteerPage.swift; sourceTree = "<group>"; };
 		E055786C2BC9C6C800176F75 /* organizerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = organizerPage.swift; sourceTree = "<group>"; };
+		E084DD642BD8CF91003C397A /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		E09B3A9C2BD824FD001FF658 /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 			children = (
 				69A1C1482BBF6B2200AF0534 /* GoogleService-Info.plist */,
 				69A1C1562BC0D44C00AF0534 /* Extensions.swift */,
+				E084DD642BD8CF91003C397A /* Survey.swift */,
 				E055786C2BC9C6C800176F75 /* organizerPage.swift */,
 				E05578662BC9958300176F75 /* login.swift */,
 				69A1C1662BC0DD5200AF0534 /* MessagesManager.swift */,
@@ -359,6 +362,7 @@
 				69A1C1692BC0E1A800AF0534 /* MessageField.swift in Sources */,
 				9B9EE8032BD848230007AAD6 /* MapView.swift in Sources */,
 				69A74E9D2BBCDC9700A8D694 /* SignIn.swift in Sources */,
+				E084DD652BD8CF91003C397A /* Survey.swift in Sources */,
 				69A1C15D2BC0D54600AF0534 /* Extensions.swift in Sources */,
 				69A1C1552BC0B5DB00AF0534 /* MessageBubble.swift in Sources */,
 				69A1C1532BC0B4B000AF0534 /* Message.swift in Sources */,

@@ -15,7 +15,7 @@ struct login: View {
     @State private var userIsLoggedIn = false
     var body: some View{
         if userIsLoggedIn{
-            profile()
+            ProfileView()
         }else{
            content
         }
